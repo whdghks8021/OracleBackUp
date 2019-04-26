@@ -1,0 +1,28 @@
+DESC tbl_member;
+
+DROP TABLE tbl_member;
+DROP TABLe tbl_hobby;
+
+CREATE TABLE tbl_member (        
+    M_USERID VARCHAR2(30) PRIMARY KEY,  
+    M_PASSWORD NVARCHAR2(125) NOT NULL,
+    M_NAME     NVARCHAR2(125) NOT NULL,
+    M_TEL      NVARCHAR2(20)  ,
+    M_CITY     NVARCHAR2(20)  ,
+    M_ADDR     NVARCHAR2(125),
+    M_PHOTO nVARCHAR2(125),
+    M_PHOTO_PATH nVARCHAR2(255)
+
+);
+DELETE FROM tbl_member;
+
+SELECT * FROM tbl_member;
+commit;
+
+CREATE TABLE tbl_jhmember (        
+    M_USERID VARCHAR2(30) PRIMARY KEY,  
+    M_PASSWORD NVARCHAR2(125) NOT NULL,
+    M_NAME     NVARCHAR2(125) NOT NULL,
+    M_TEL      NVARCHAR2(20)  ,
+    M_ADDR     NVARCHAR2(125)
+);

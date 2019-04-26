@@ -1,0 +1,13 @@
+-- 여기는 관리자 입니다.
+
+CREATE TABLESPACE myIOTs
+DATAFILE 'D:/bizwork/ordata/myIOTS.dbf'
+SIZE 100M
+AUTOEXTEND ON NEXT 1M;
+
+CREATE USER myIoUser IDENTIFIED BY 1234
+DEFAULT TABLESPACE myIOTs;
+
+GRANT dba TO myIoUser ;
+
+

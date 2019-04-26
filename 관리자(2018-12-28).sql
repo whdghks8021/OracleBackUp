@@ -1,0 +1,13 @@
+-- 여기는 관리자입니다.
+
+-- 자바 어플리케이션에서 사용할 tablespace와 사용자를 생성
+
+CREATE TABLESPACE bbsTS
+DATAFILE 'D:/bizwork/ordata/BBSTS.DBF'
+SIZE 100M
+AUTOEXTEND ON NEXT 100K;
+
+CREATE USER bbsUSER IDENTIFIED BY 1234
+DEFAULT TABLESPACE bbsTS;
+
+GRANT DBA TO bbsUSER;
